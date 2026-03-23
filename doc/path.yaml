@@ -1,0 +1,4 @@
+NAME: path
+VERSION: 0.1.0
+DESCRIPTION: Pure Python file and directory finder powered by pathlib
+AUTHOR: "@spacemany2k38"

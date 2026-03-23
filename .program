@@ -1,0 +1,5 @@
+name: path
+version: 0.1.0
+author: @spacemany2k38
+description: Pure Python file and directory finder powered by pathlib
+type: cli-tool
