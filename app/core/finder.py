@@ -102,7 +102,10 @@ def walk(root, max_depth=None, hidden=False):
         return
 
     try:
-        for entry in sorted(root.iterdir(), key=lambda p: (p.is_file(), p.name.lower())):
+        for entry in sorted(
+            root.iterdir(),
+            key=lambda p: (p.is_file(), p.name.lower()),
+        ):
             depth = 1
             if not hidden and entry.name.startswith("."):
                 continue
@@ -115,7 +118,10 @@ def walk(root, max_depth=None, hidden=False):
 
 def _walk_recursive(directory, root, current_depth, max_depth, hidden):
     try:
-        for entry in sorted(directory.iterdir(), key=lambda p: (p.is_file(), p.name.lower())):
+        for entry in sorted(
+            directory.iterdir(),
+            key=lambda p: (p.is_file(), p.name.lower()),
+        ):
             depth = current_depth + 1
             if not hidden and entry.name.startswith("."):
                 continue
